@@ -343,7 +343,7 @@ def _needs_tiamat(champ):
 def _build_plan_for_matchup(champ, is_ap=False, hard=False):
     precisa_tiamat = _needs_tiamat(champ)
 
-        plano_compra = _build_plan_for_matchup(champ, is_ap=is_ap, hard=hard)
+    plano_compra = _build_plan_for_matchup(champ, is_ap=is_ap, hard=hard)
 
     if is_ap and hard:
         situacionais = ["Hexdrinker", "Mandíbula de Malmortius", "Sinal de Sterak"]
@@ -860,7 +860,7 @@ def get_generic_matchup_data(champ, base_data):
     tipo_bota = "Botas de Mercúrio" if is_ap else "Placas de Aço"
     item_inicial = "Escudo de Doran" if hard else "Lâmina de Doran"
 
-        plano_compra = _build_plan_for_matchup(champ, is_ap=is_ap, hard=hard)
+    plano_compra = _build_plan_for_matchup(champ, is_ap=is_ap, hard=hard)
 
     situacionais = ["Mandíbula de Malmortius", "Sinal de Sterak", "Dança da Morte"] if is_ap else ["Sinal de Sterak", "Dança da Morte", "Anjo Guardião"]
 
